@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
   res.render('index', { title: 'acount summary',accounts })
 });
 
-app.get('/saving',(req,res)=>{
+app.get('/savings',(req,res)=>{
   res.render('account',{account:accounts.savings})
 });
 
@@ -35,7 +35,7 @@ app.get('/credit',(req,res)=>{
 
 
 app.get('/profile',(req,res)=>{
-  res.render('profile',{user:user[0]})
+  res.render('profile',{user:users[0]})
 });
 app.listen(3000, () => {
   console.log('ps project running on port 3000')
